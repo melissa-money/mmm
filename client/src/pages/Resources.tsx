@@ -49,12 +49,7 @@ export default function Resources() {
       link: 'https://referworkspace.app.goo.gl/jQXr',
       color: 'bg-green-400',
     },
-    {
-      name: 'Credit Repair Cloud',
-      description: 'This Free Webclass Is For Entrepreneurs, Small Business Owners, & Those Just Getting Started',
-      link: 'https://get.creditrepaircloud.com/l9zjpnofac8e',
-      color: 'bg-gray-400',
-    },
+
   ];
 
   const filteredTools = useMemo(() => {
