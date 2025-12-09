@@ -187,70 +187,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Google Reviews Section */}
-        <section className="py-20 bg-gray-50 border-b-4 border-black">
-          <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="font-heading text-5xl font-bold mb-6">What Our Clients Say</h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Real reviews from real business owners who have seen real results.
-              </p>
-            </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Sarah Jenkins",
-                  role: "Business Owner",
-                  text: "Millennial Money Marketing completely transformed our online presence. We went from page 5 to #1 in just 6 weeks!",
-                  stars: 5
-                },
-                {
-                  name: "Mike Thompson",
-                  role: "CEO, TechStart",
-                  text: "The ROI has been incredible. Their team is responsive, professional, and they actually deliver on their promises.",
-                  stars: 5
-                },
-                {
-                  name: "Jessica Lee",
-                  role: "Marketing Director",
-                  text: "Finally an agency that understands modern marketing. The neubrutalism design they did for us stands out so much.",
-                  stars: 5
-                }
-              ].map((review, index) => (
-                <div key={index} className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative">
-                  <div className="absolute -top-4 -left-4 bg-secondary border-2 border-black p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <div className="flex gap-1">
-                      {[...Array(review.stars)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-black text-black" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-lg text-gray-800 mb-6 italic">"{review.text}"</p>
-                  <div className="flex items-center gap-4">
-                    <div className="h-12 w-12 bg-gray-200 rounded-full border-2 border-black overflow-hidden">
-                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${review.name}`} alt={review.name} />
-                    </div>
-                    <div>
-                      <div className="font-heading font-bold text-lg">{review.name}</div>
-                      <div className="text-sm text-gray-600 font-bold uppercase">{review.role}</div>
-                    </div>
-                  </div>
-                  <div className="absolute bottom-4 right-4 opacity-10">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="h-8 w-8" />
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-12 text-center">
-              <div className="inline-flex items-center gap-2 bg-white border-2 border-black px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="h-6 w-6" />
-                <span className="font-heading font-bold text-lg">4.9/5 Average Rating based on 120+ Reviews</span>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section className="py-24 bg-primary border-b-4 border-black relative overflow-hidden">
