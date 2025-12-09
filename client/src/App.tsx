@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
+import Resources from "./pages/Resources";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
       <Route path="/partners" component={Partners} />
+      <Route path="/resources" component={Resources} />
       <Route path="/contact" component={Contact} />
       {/* Service sub-routes redirect to main services page for now */}
       <Route path="/services/:slug" component={Services} />
