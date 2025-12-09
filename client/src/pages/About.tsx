@@ -74,8 +74,8 @@ export default function About() {
               </div>
 
               {/* Photo Placeholder */}
-              <div className="relative">
-                <div className="bg-white border-4 border-black p-4 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+              <div className="relative flex justify-center">
+                <div className="w-3/4 sm:w-2/3 bg-white border-4 border-black p-4 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
                   <div className="aspect-square bg-gray-200 border-2 border-black overflow-hidden relative">
                     <img
                       src="https://storage.googleapis.com/msgsndr/nhEbwJlZ6WrgquZ6cQwb/media/68c89dc10aed916f7671d77a.png"
@@ -90,11 +90,11 @@ export default function About() {
                 </div>
                 
                 {/* Floating Elements */}
-                <div className="absolute -top-6 -right-6 bg-accent border-2 border-black px-4 py-2 font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-3">
+                <div className="absolute -top-6 right-0 sm:right-12 bg-accent border-2 border-black px-4 py-2 font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-3">
                   ⭐ 5-Star Rated
                 </div>
                 
-                <div className="absolute -bottom-6 -left-6 bg-primary border-2 border-black px-4 py-2 font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-3">
+                <div className="absolute -bottom-6 left-0 sm:left-12 bg-primary border-2 border-black px-4 py-2 font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-3">
                   💼 Fortune 250 Experience
                 </div>
               </div>
