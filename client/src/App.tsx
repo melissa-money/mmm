@@ -7,6 +7,15 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import BusinessFunding from "./pages/services/BusinessFunding";
+import LocalBusinessMarketing from "./pages/services/LocalBusinessMarketing";
+import WebDesign from "./pages/services/WebDesign";
+import GoogleBusinessProfile from "./pages/services/GoogleBusinessProfile";
+import EmailDeliverability from "./pages/services/EmailDeliverability";
+import CustomAutomations from "./pages/services/CustomAutomations";
+import DBAFiling from "./pages/services/DBAFiling";
+import VirtualAssistantPlacement from "./pages/services/VirtualAssistantPlacement";
+import EcommerceMarketing from "./pages/services/EcommerceMarketing";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
@@ -17,6 +26,15 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
+      <Route path="/services/business-funding" component={BusinessFunding} />
+      <Route path="/services/local-business-marketing" component={LocalBusinessMarketing} />
+      <Route path="/services/web-design" component={WebDesign} />
+      <Route path="/services/google-business-profile" component={GoogleBusinessProfile} />
+      <Route path="/services/email-deliverability" component={EmailDeliverability} />
+      <Route path="/services/custom-automations" component={CustomAutomations} />
+      <Route path="/services/dba-filing" component={DBAFiling} />
+      <Route path="/services/virtual-assistant-placement" component={VirtualAssistantPlacement} />
+      <Route path="/services/ecommerce-marketing" component={EcommerceMarketing} />
       <Route path="/partners" component={Partners} />
       <Route path="/resources" component={Resources} />
       <Route path="/contact" component={Contact} />
