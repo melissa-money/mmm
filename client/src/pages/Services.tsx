@@ -1,4 +1,4 @@
-import { MapPin, ShoppingCart, Star, Palette, Mail, Users, FileText, ArrowRight, CheckCircle, DollarSign } from 'lucide-react';
+import { MapPin, ShoppingCart, Star, Palette, Mail, Users, FileText, ArrowRight, CheckCircle, DollarSign, Rocket } from 'lucide-react';
 import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -77,6 +77,15 @@ export default function Services() {
       href: '/services/business-funding',
       color: 'bg-green-400',
       stats: { improvement: '$1M', customers: '24-72hrs' },
+    },
+    {
+      icon: Rocket,
+      title: 'Cold Email Lead Gen',
+      description: 'Automated cold email infrastructure that fills your calendar with qualified sales calls on autopilot.',
+      features: ['Infrastructure Setup', 'Lead Sourcing', 'Creative Strategy', 'Automated Outreach'],
+      href: '/services/cold-email-lead-gen',
+      color: 'bg-pink-400',
+      stats: { improvement: '10x', customers: 'ROI' },
     },
   ];
 

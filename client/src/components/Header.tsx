@@ -20,6 +20,7 @@ export default function Header() {
     { name: 'DBA Filing', href: '/services/dba-filing' },
     { name: 'Virtual Assistant Placement', href: '/services/virtual-assistant-placement' },
     { name: 'Ecommerce Marketing', href: '/services/ecommerce-marketing' },
+    { name: 'Cold Email Lead Gen', href: '/services/cold-email-lead-gen' },
   ];
 
   const navigation = [

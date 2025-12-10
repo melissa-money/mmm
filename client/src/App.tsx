@@ -16,6 +16,7 @@ import CustomAutomations from "./pages/services/CustomAutomations";
 import DBAFiling from "./pages/services/DBAFiling";
 import VirtualAssistantPlacement from "./pages/services/VirtualAssistantPlacement";
 import EcommerceMarketing from "./pages/services/EcommerceMarketing";
+import ColdEmailLeadGen from "./pages/services/ColdEmailLeadGen";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/services/dba-filing" component={DBAFiling} />
       <Route path="/services/virtual-assistant-placement" component={VirtualAssistantPlacement} />
       <Route path="/services/ecommerce-marketing" component={EcommerceMarketing} />
+      <Route path="/services/cold-email-lead-gen" component={ColdEmailLeadGen} />
       <Route path="/partners" component={Partners} />
       <Route path="/resources" component={Resources} />
       <Route path="/contact" component={Contact} />
