@@ -11,16 +11,16 @@ export default function Header() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const services = [
-    { name: 'Business Funding', href: '/services/business-funding' },
     { name: 'Local Business Marketing', href: '/services/local-business-marketing' },
-    { name: 'Web Design', href: '/services/web-design' },
     { name: 'Google Business Profile', href: '/services/google-business-profile' },
+    { name: 'Cold Email Lead Gen', href: '/services/cold-email-lead-gen' },
     { name: 'Email Deliverability', href: '/services/email-deliverability' },
+    { name: 'Business Funding', href: '/services/business-funding' },
+    { name: 'Web Design', href: '/services/web-design' },
     { name: 'Custom Automations', href: '/services/custom-automations' },
     { name: 'DBA Filing', href: '/services/dba-filing' },
     { name: 'Virtual Assistant Placement', href: '/services/virtual-assistant-placement' },
     { name: 'Ecommerce Marketing', href: '/services/ecommerce-marketing' },
-    { name: 'Cold Email Lead Gen', href: '/services/cold-email-lead-gen' },
   ];
 
   const navigation = [
