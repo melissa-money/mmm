@@ -52,14 +52,14 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <a className="flex items-center gap-2">
+              <span className="flex items-center gap-2 cursor-pointer">
                 <div className="h-10 w-10 bg-primary border-2 border-black flex items-center justify-center font-heading font-bold text-xl">
                   M
                 </div>
                 <span className="font-heading text-xl font-bold tracking-tight hidden sm:block">
                   Millennial Money Marketing
                 </span>
-              </a>
+              </span>
             </Link>
           </div>
 
@@ -67,12 +67,12 @@ export default function Header() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/">
-                <a className={cn(
-                  'px-3 py-2 text-sm font-medium transition-all hover:-translate-y-0.5 hover:text-primary font-heading uppercase tracking-wide',
+                <span className={cn(
+                  'px-3 py-2 text-sm font-medium transition-all hover:-translate-y-0.5 hover:text-primary font-heading uppercase tracking-wide cursor-pointer',
                   isActive('/') ? 'text-primary underline decoration-4 underline-offset-4' : 'text-black'
                 )}>
                   Home
-                </a>
+                </span>
               </Link>
 
               {/* Services Dropdown */}
@@ -92,24 +92,24 @@ export default function Header() {
                   <div className="absolute left-0 mt-2 w-72 origin-top-left bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] z-50">
                     <div className="py-1">
                       <Link href="/services">
-                        <a
-                          className="block px-4 py-3 text-sm font-bold text-black hover:bg-primary hover:text-black border-b-2 border-gray-100 uppercase tracking-wide"
+                        <span
+                          className="block px-4 py-3 text-sm font-bold text-black hover:bg-primary hover:text-black border-b-2 border-gray-100 uppercase tracking-wide cursor-pointer"
                           onClick={() => setIsServicesOpen(false)}
                         >
                           All Services
-                        </a>
+                        </span>
                       </Link>
                       {services.map((service) => (
                         <Link key={service.name} href={service.href}>
-                          <a
+                          <span
                             className={cn(
-                              'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary hover:pl-6 transition-all',
+                              'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary hover:pl-6 transition-all cursor-pointer',
                               isActive(service.href) ? 'bg-gray-50 text-primary font-bold' : ''
                             )}
                             onClick={() => setIsServicesOpen(false)}
                           >
                             {service.name}
-                          </a>
+                          </span>
                         </Link>
                       ))}
                     </div>
@@ -119,16 +119,16 @@ export default function Header() {
 
               {navigation.slice(1).map((item) => (
                 <Link key={item.name} href={item.href}>
-                  <a
+                  <span
                     className={cn(
-                      'px-3 py-2 text-sm font-medium transition-all hover:-translate-y-0.5 hover:text-primary font-heading uppercase tracking-wide',
+                      'px-3 py-2 text-sm font-medium transition-all hover:-translate-y-0.5 hover:text-primary font-heading uppercase tracking-wide cursor-pointer',
                       isActive(item.href)
                         ? 'text-primary underline decoration-4 underline-offset-4'
                         : 'text-black'
                     )}
                   >
                     {item.name}
-                  </a>
+                  </span>
                 </Link>
               ))}
             </div>
@@ -167,15 +167,15 @@ export default function Header() {
         <div className="md:hidden border-t-2 border-black bg-white max-h-[calc(100vh-80px)] overflow-y-auto">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <Link href="/">
-              <a
+              <span
                 className={cn(
-                  'block px-3 py-2 text-base font-medium font-heading uppercase',
+                  'block px-3 py-2 text-base font-medium font-heading uppercase cursor-pointer',
                   isActive('/') ? 'bg-primary text-black border-2 border-black' : 'text-black hover:bg-gray-100'
                 )}
                 onClick={() => setIsOpen(false)}
               >
                 Home
-              </a>
+              </span>
             </Link>
 
             {/* Mobile Services Dropdown */}
@@ -191,24 +191,24 @@ export default function Header() {
               {isServicesOpen && (
                 <div className="pl-4 space-y-1 border-l-2 border-black ml-3 my-2">
                   <Link href="/services">
-                    <a
-                      className="block px-3 py-2 text-sm font-bold text-black hover:text-primary uppercase"
+                    <span
+                      className="block px-3 py-2 text-sm font-bold text-black hover:text-primary uppercase cursor-pointer"
                       onClick={() => setIsOpen(false)}
                     >
                       All Services
-                    </a>
+                    </span>
                   </Link>
                   {services.map((service) => (
                     <Link key={service.name} href={service.href}>
-                      <a
+                      <span
                         className={cn(
-                          'block px-3 py-2 text-sm text-gray-600 hover:text-primary',
+                          'block px-3 py-2 text-sm text-gray-600 hover:text-primary cursor-pointer',
                           isActive(service.href) ? 'text-primary font-bold' : ''
                         )}
                         onClick={() => setIsOpen(false)}
                       >
                         {service.name}
-                      </a>
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -217,9 +217,9 @@ export default function Header() {
 
             {navigation.slice(1).map((item) => (
               <Link key={item.name} href={item.href}>
-                <a
+                <span
                   className={cn(
-                    'block px-3 py-2 text-base font-medium font-heading uppercase',
+                    'block px-3 py-2 text-base font-medium font-heading uppercase cursor-pointer',
                     isActive(item.href)
                       ? 'bg-primary text-black border-2 border-black'
                       : 'text-black hover:bg-gray-100'
@@ -227,7 +227,7 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
-                </a>
+                </span>
               </Link>
             ))}
             
