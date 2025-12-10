@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 
+// Service page for Cold Email Lead Generation System
 export default function ColdEmailLeadGen() {
   const infrastructure = [
     'Register & configure sending domains',
