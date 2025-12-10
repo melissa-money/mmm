@@ -25,14 +25,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <Link href="/">
-              <a className="flex items-center gap-2 mb-4">
+              <span className="flex items-center gap-2 mb-4 cursor-pointer">
                 <div className="h-10 w-10 bg-primary border-2 border-white flex items-center justify-center font-heading font-bold text-xl text-black">
                   M
                 </div>
                 <span className="font-heading text-xl font-bold tracking-tight text-white">
                   Millennial Money Marketing
                 </span>
-              </a>
+              </span>
             </Link>
             
             <p className="text-gray-300 mb-6 max-w-md font-sans">
@@ -91,9 +91,9 @@ const Footer = () => {
               {services.map((service) => (
                 <li key={service.href}>
                   <Link href={service.href}>
-                    <a className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block">
+                    <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
                       → {service.name}
-                    </a>
+                    </span>
                   </Link>
                 </li>
               ))}
@@ -106,23 +106,23 @@ const Footer = () => {
             <ul className="space-y-2 font-sans">
               <li>
                 <Link href="/">
-                  <a className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block">
+                  <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
                     → Home
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block">
+                  <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
                     → About Us
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <a className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block">
+                  <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
                     → Contact
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li>
@@ -171,14 +171,14 @@ const Footer = () => {
               </span>
               <div className="flex space-x-4 text-gray-400">
                 <Link href="/privacy">
-                  <a className="hover:text-white transition-colors duration-200 underline decoration-1 underline-offset-2">
+                  <span className="hover:text-white transition-colors duration-200 underline decoration-1 underline-offset-2 cursor-pointer">
                     Privacy Policy
-                  </a>
+                  </span>
                 </Link>
                 <Link href="/terms">
-                  <a className="hover:text-white transition-colors duration-200 underline decoration-1 underline-offset-2">
+                  <span className="hover:text-white transition-colors duration-200 underline decoration-1 underline-offset-2 cursor-pointer">
                     Terms of Service
-                  </a>
+                  </span>
                 </Link>
               </div>
             </div>
