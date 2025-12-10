@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 
 // Service page for Cold Email Lead Generation System
+// Fixed nested anchor tags in layout components
 export default function ColdEmailLeadGen() {
   const infrastructure = [
     'Register & configure sending domains',
