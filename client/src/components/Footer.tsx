@@ -26,9 +26,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link href="/">
               <span className="flex items-center gap-2 mb-4 cursor-pointer">
-                <div className="h-10 w-10 bg-primary border-2 border-white flex items-center justify-center font-heading font-bold text-xl text-black">
-                  M
-                </div>
+                <img src="/favicon.png" alt="Millennial Money Marketing Logo" className="h-10 w-10 object-contain" />
                 <span className="font-heading text-xl font-bold tracking-tight text-white">
                   Millennial Money Marketing
                 </span>

@@ -53,9 +53,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/">
               <span className="flex items-center gap-2 cursor-pointer">
-                <div className="h-10 w-10 bg-primary border-2 border-black flex items-center justify-center font-heading font-bold text-xl">
-                  M
-                </div>
+                <img src="/favicon.png" alt="Millennial Money Marketing Logo" className="h-10 w-10 object-contain" />
                 <span className="font-heading text-xl font-bold tracking-tight hidden sm:block">
                   Millennial Money Marketing
                 </span>
