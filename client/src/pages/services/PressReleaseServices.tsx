@@ -106,7 +106,7 @@ export default function PressReleaseServices() {
                     <h3 className="font-heading text-xl sm:text-2xl font-bold text-black mb-4 uppercase">Distribution Network</h3>
                     <div className="space-y-3 font-sans">
                       <div className="flex items-center gap-3 bg-white border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/USA_Today_logo.svg/1200px-USA_Today_logo.svg.png" alt="USA Today" className="h-6 object-contain" />
+                        <img src="/images/usa-today-logo.png" alt="USA Today" className="h-6 object-contain" />
                         <span className="font-bold ml-auto">Tier 1</span>
                       </div>
                       <div className="flex items-center gap-3 bg-white border-2 border-black p-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
