@@ -1,4 +1,4 @@
-import { MapPin, ShoppingCart, Star, Palette, Mail, Users, FileText, ArrowRight, CheckCircle, DollarSign, Rocket } from 'lucide-react';
+import { MapPin, ShoppingCart, Star, Palette, Mail, Users, FileText, ArrowRight, CheckCircle, DollarSign, Rocket, Newspaper } from 'lucide-react';
 import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -32,6 +32,15 @@ export default function Services() {
       href: '/services/cold-email-lead-gen',
       color: 'bg-pink-400',
       stats: { improvement: '10x', customers: 'ROI' },
+    },
+    {
+      icon: Newspaper,
+      title: 'Press Release Services',
+      description: 'Get featured on top news sites like USA Today, Digital Journal, and more to build authority and reach.',
+      features: ['Tier 1 Distribution', 'High Authority Sites', 'SEO Backlinks', 'Broad Coverage'],
+      href: '/services/press-release-services',
+      color: 'bg-yellow-400',
+      stats: { improvement: '500+', customers: 'Outlets' },
     },
     {
       icon: Mail,
