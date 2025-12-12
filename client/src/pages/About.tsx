@@ -38,20 +38,20 @@ export default function About() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-20 bg-white border-b-4 border-black">
+        <section className="py-12 sm:py-20 bg-white border-b-4 border-black">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               {/* Content */}
               <div>
-                <div className="inline-block bg-primary border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-2 mb-6">
-                  <span className="font-heading font-bold text-black uppercase tracking-wider">Meet The Founder</span>
+                <div className="inline-block bg-primary border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-2 mb-4 sm:mb-6">
+                  <span className="font-heading font-bold text-black uppercase tracking-wider text-sm sm:text-base">Meet The Founder</span>
                 </div>
                 
-                <h1 className="font-heading text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-                  From Corporate Success to <span className="bg-secondary px-2">Local Marketing Expert</span>
+                <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
+                  From Corporate Success to <span className="bg-secondary px-2 inline-block">Local Marketing Expert</span>
                 </h1>
                 
-                <p className="text-xl text-gray-700 mb-8 leading-relaxed border-l-4 border-black pl-6 py-2">
+                <p className="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed border-l-4 border-black pl-4 sm:pl-6 py-2">
                   Hi, I'm Melissa. I understand the struggle of building a successful business 
                   while maintaining work-life balance. My journey from Fortune 250 executive to 
                   entrepreneurial success has given me unique insights into what really works.
@@ -67,15 +67,15 @@ export default function About() {
                 </div>
 
                 <a href="https://link.millennialmoneymarketing.com/widget/booking/5HjJ1VBH28PwTwAdzIQb" target="_blank" rel="noopener noreferrer">
-                  <Button className="h-14 px-8 text-lg bg-black text-white hover:bg-primary hover:text-black border-2 border-black rounded-none font-heading font-bold shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all">
+                  <Button className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg bg-black text-white hover:bg-primary hover:text-black border-2 border-black rounded-none font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all whitespace-normal h-auto py-4">
                     Book a Call with Melissa
                   </Button>
                 </a>
               </div>
 
               {/* Photo Placeholder */}
-              <div className="relative flex justify-center">
-                <div className="w-3/4 sm:w-2/3 bg-white border-4 border-black p-4 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+              <div className="relative flex justify-center mt-8 lg:mt-0">
+                <div className="w-full sm:w-3/4 lg:w-2/3 bg-white border-4 border-black p-3 sm:p-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] sm:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
                   <div className="aspect-square bg-gray-200 border-2 border-black overflow-hidden relative">
                     <img
                       src="https://storage.googleapis.com/msgsndr/nhEbwJlZ6WrgquZ6cQwb/media/68c89dc10aed916f7671d77a.png"
@@ -84,17 +84,17 @@ export default function About() {
                     />
                   </div>
                   <div className="mt-4 text-center">
-                    <h3 className="font-heading text-2xl font-bold text-black">Melissa</h3>
-                    <p className="font-sans font-bold text-gray-600 uppercase tracking-wider">Founder & CEO</p>
+                    <h3 className="font-heading text-xl sm:text-2xl font-bold text-black">Melissa</h3>
+                    <p className="font-sans font-bold text-gray-600 uppercase tracking-wider text-sm sm:text-base">Founder & CEO</p>
                   </div>
                 </div>
                 
                 {/* Floating Elements */}
-                <div className="absolute -top-6 right-0 sm:right-12 bg-accent border-2 border-black px-4 py-2 font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-3">
+                <div className="absolute -top-4 -right-2 sm:-top-6 sm:right-12 bg-accent border-2 border-black px-3 py-1 sm:px-4 sm:py-2 font-heading font-bold text-sm sm:text-base shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-3 z-10">
                   ⭐ 5-Star Rated
                 </div>
                 
-                <div className="absolute -bottom-6 left-0 sm:left-12 bg-primary border-2 border-black px-4 py-2 font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-3">
+                <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:left-12 bg-primary border-2 border-black px-3 py-1 sm:px-4 sm:py-2 font-heading font-bold text-sm sm:text-base shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-3 z-10">
                   💼 Fortune 250 Experience
                 </div>
               </div>
@@ -103,18 +103,18 @@ export default function About() {
         </section>
 
         {/* Story Section */}
-        <section className="py-20 bg-gray-50 border-b-4 border-black">
+        <section className="py-12 sm:py-20 bg-gray-50 border-b-4 border-black">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="font-heading text-5xl font-bold text-black mb-6">
-                My <span className="bg-primary px-2">Journey</span>
+            <div className="text-center mb-10 sm:mb-16">
+              <h2 className="font-heading text-3xl sm:text-5xl font-bold text-black mb-4 sm:mb-6">
+                My <span className="bg-primary px-2 inline-block">Journey</span>
               </h2>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-8">
-              <div className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform">
-                <h3 className="font-heading text-2xl font-bold text-black mb-4 uppercase border-b-2 border-black inline-block">Corporate Success</h3>
-                <p className="text-gray-700 leading-relaxed font-sans text-lg">
+            <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
+              <div className="bg-white border-2 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4 uppercase border-b-2 border-black inline-block">Corporate Success</h3>
+                <p className="text-gray-700 leading-relaxed font-sans text-base sm:text-lg">
                   I spent years climbing the corporate ladder as a marketing executive at a Fortune 250 company. 
                   While I gained invaluable experience in large-scale marketing strategies, I always felt something 
                   was missing – the personal connection and direct impact on business owners who were building 
@@ -122,9 +122,9 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_#CCFF00] hover:-translate-y-1 transition-transform ml-0 md:ml-12">
-                <h3 className="font-heading text-2xl font-bold text-black mb-4 uppercase border-b-2 border-black inline-block">Entrepreneurial Leap</h3>
-                <p className="text-gray-700 leading-relaxed font-sans text-lg">
+              <div className="bg-white border-2 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#CCFF00] sm:shadow-[8px_8px_0px_0px_#CCFF00] hover:-translate-y-1 transition-transform ml-0 md:ml-12">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4 uppercase border-b-2 border-black inline-block">Entrepreneurial Leap</h3>
+                <p className="text-gray-700 leading-relaxed font-sans text-base sm:text-lg">
                   As a mom seeking time freedom and the ability to be present for my family, I made the bold 
                   decision to leave corporate and start my own ecommerce business. This experience taught me 
                   firsthand the challenges that small business owners face and what it really takes to succeed 
@@ -132,9 +132,9 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_#FF69B4] hover:-translate-y-1 transition-transform">
-                <h3 className="font-heading text-2xl font-bold text-black mb-4 uppercase border-b-2 border-black inline-block">Transforming Local Business</h3>
-                <p className="text-gray-700 leading-relaxed font-sans text-lg">
+              <div className="bg-white border-2 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FF69B4] sm:shadow-[8px_8px_0px_0px_#FF69B4] hover:-translate-y-1 transition-transform">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4 uppercase border-b-2 border-black inline-block">Transforming Local Business</h3>
+                <p className="text-gray-700 leading-relaxed font-sans text-base sm:text-lg">
                   When my husband's local service business was struggling to get noticed online, I applied my 
                   marketing expertise to transform his digital presence. The results were incredible – within 
                   months, he went from struggling to find customers to being booked solid with 5-star reviews 
@@ -142,9 +142,9 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_#FFD700] hover:-translate-y-1 transition-transform ml-0 md:ml-12">
-                <h3 className="font-heading text-2xl font-bold text-black mb-4 uppercase border-b-2 border-black inline-block">Helping Others Succeed</h3>
-                <p className="text-gray-700 leading-relaxed font-sans text-lg">
+              <div className="bg-white border-2 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFD700] sm:shadow-[8px_8px_0px_0px_#FFD700] hover:-translate-y-1 transition-transform ml-0 md:ml-12">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4 uppercase border-b-2 border-black inline-block">Helping Others Succeed</h3>
+                <p className="text-gray-700 leading-relaxed font-sans text-base sm:text-lg">
                   That's when I realized my true calling – helping other local business owners achieve the same 
                   success. I founded Millennial Money Marketing to bridge the gap between corporate-level 
                   marketing strategies and local business needs. Today, I'm proud to help businesses across 
@@ -156,32 +156,32 @@ export default function About() {
         </section>
 
         {/* Values Section */}
-        <section className="py-20 bg-white border-b-4 border-black">
+        <section className="py-12 sm:py-20 bg-white border-b-4 border-black">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="font-heading text-5xl font-bold text-black mb-6">
-                Our <span className="bg-secondary px-2">Values</span>
+            <div className="text-center mb-10 sm:mb-16">
+              <h2 className="font-heading text-3xl sm:text-5xl font-bold text-black mb-4 sm:mb-6">
+                Our <span className="bg-secondary px-2 inline-block">Values</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto font-sans">
                 These principles guide everything we do and ensure you get the results you deserve.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
+                  className="bg-white border-2 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
                 >
-                  <div className={`inline-flex items-center justify-center w-20 h-20 ${value.color} border-2 border-black rounded-none mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}>
-                    <value.icon className="h-10 w-10 text-black" />
+                  <div className={`inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 ${value.color} border-2 border-black rounded-none mb-4 sm:mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}>
+                    <value.icon className="h-8 w-8 sm:h-10 sm:w-10 text-black" />
                   </div>
                   
-                  <h3 className="font-heading text-2xl font-bold text-black mb-4 uppercase">
+                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4 uppercase">
                     {value.title}
                   </h3>
                   
-                  <p className="text-gray-700 font-sans text-lg">
+                  <p className="text-gray-700 font-sans text-base sm:text-lg">
                     {value.description}
                   </p>
                 </div>
@@ -191,19 +191,19 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-black text-white">
+        <section className="py-12 sm:py-20 bg-black text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               Ready to <span className="text-accent">Transform</span> Your Business?
             </h2>
             
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-sans">
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto font-sans">
               Let's have a conversation about your business goals and how we can help you achieve them. 
               No sales pressure – just honest advice and actionable insights.
             </p>
 
             <a href="https://link.millennialmoneymarketing.com/widget/booking/5HjJ1VBH28PwTwAdzIQb" target="_blank" rel="noopener noreferrer">
-              <Button className="h-16 px-10 text-xl bg-accent text-black hover:bg-white hover:text-black border-2 border-white rounded-none font-heading font-bold shadow-[6px_6px_0px_0px_#fff] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0px_0px_#fff] transition-all">
+              <Button className="w-full sm:w-auto h-14 sm:h-16 px-6 sm:px-10 text-lg sm:text-xl bg-accent text-black hover:bg-white hover:text-black border-2 border-white rounded-none font-heading font-bold shadow-[4px_4px_0px_0px_#fff] sm:shadow-[6px_6px_0px_0px_#fff] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0px_0px_#fff] transition-all whitespace-normal h-auto py-4">
                 Schedule Your Free Strategy Call
               </Button>
             </a>

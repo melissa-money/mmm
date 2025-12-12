@@ -95,82 +95,82 @@ export default function Services() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-20 bg-white border-b-4 border-black">
+        <section className="py-12 sm:py-20 bg-white border-b-4 border-black">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight mb-6">
-              Digital Marketing Services That <span className="bg-primary px-2">Deliver Results</span>
+            <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight mb-4 sm:mb-6">
+              Digital Marketing Services That <span className="bg-primary px-2 inline-block">Deliver Results</span>
             </h1>
             
-            <p className="text-xl text-gray-700 mb-10 max-w-4xl mx-auto font-sans">
+            <p className="text-lg sm:text-xl text-gray-700 mb-8 sm:mb-10 max-w-4xl mx-auto font-sans">
               We help businesses rank #1 on Google, get more 5-star reviews, and grow their customer base 
               without spending a fortune on ads. Choose from our comprehensive suite of marketing services.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 sm:mb-16">
               <a href="https://link.millennialmoneymarketing.com/widget/booking/5HjJ1VBH28PwTwAdzIQb" target="_blank" rel="noopener noreferrer">
-                <Button className="h-14 px-10 text-lg bg-black text-white hover:bg-secondary hover:text-black border-2 border-black rounded-none font-heading font-bold shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all">
+                <Button className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-10 text-base sm:text-lg bg-black text-white hover:bg-secondary hover:text-black border-2 border-black rounded-none font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all whitespace-normal h-auto py-4">
                   Get Your Free Marketing Audit
                 </Button>
               </a>
             </div>
 
             {/* Trust Stats */}
-            <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              <div className="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <div className="font-heading text-4xl font-bold text-black mb-1">150+</div>
-                <div className="text-sm font-bold uppercase tracking-wider text-gray-600">Businesses Helped</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
+              <div className="bg-white border-2 border-black p-3 sm:p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <div className="font-heading text-3xl sm:text-4xl font-bold text-black mb-1">150+</div>
+                <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-600">Businesses Helped</div>
               </div>
-              <div className="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <div className="font-heading text-4xl font-bold text-black mb-1">98%</div>
-                <div className="text-sm font-bold uppercase tracking-wider text-gray-600">Success Rate</div>
+              <div className="bg-white border-2 border-black p-3 sm:p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <div className="font-heading text-3xl sm:text-4xl font-bold text-black mb-1">98%</div>
+                <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-600">Success Rate</div>
               </div>
-              <div className="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <div className="font-heading text-4xl font-bold text-black mb-1">30 days</div>
-                <div className="text-sm font-bold uppercase tracking-wider text-gray-600">To See Results</div>
+              <div className="bg-white border-2 border-black p-3 sm:p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <div className="font-heading text-3xl sm:text-4xl font-bold text-black mb-1">30 days</div>
+                <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-600">To See Results</div>
               </div>
-              <div className="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <div className="font-heading text-4xl font-bold text-black mb-1">5⭐</div>
-                <div className="text-sm font-bold uppercase tracking-wider text-gray-600">Average Rating</div>
+              <div className="bg-white border-2 border-black p-3 sm:p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <div className="font-heading text-3xl sm:text-4xl font-bold text-black mb-1">5⭐</div>
+                <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-600">Average Rating</div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Services Grid */}
-        <section className="py-20 bg-gray-50 border-b-4 border-black">
+        <section className="py-12 sm:py-20 bg-gray-50 border-b-4 border-black">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="font-heading text-5xl font-bold text-black mb-6">
-                Choose Your <span className="bg-secondary px-2">Growth Strategy</span>
+            <div className="text-center mb-10 sm:mb-16">
+              <h2 className="font-heading text-3xl sm:text-5xl font-bold text-black mb-4 sm:mb-6">
+                Choose Your <span className="bg-secondary px-2 inline-block">Growth Strategy</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto font-sans">
                 Each service is designed to work independently or together as part of a comprehensive 
                 marketing strategy that drives real results.
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white border-2 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all group"
+                  className="bg-white border-2 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all group"
                 >
                   <div className="flex items-start justify-between mb-6">
-                    <div className={`inline-flex items-center justify-center w-16 h-16 ${service.color} border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}>
-                      <service.icon className="h-8 w-8 text-black" />
+                    <div className={`inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 ${service.color} border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}>
+                      <service.icon className="h-6 w-6 sm:h-8 sm:w-8 text-black" />
                     </div>
                     
                     <div className="text-right">
-                      <div className="font-heading text-3xl font-bold text-black">{service.stats.improvement}</div>
-                      <div className="text-sm font-bold uppercase tracking-wider text-gray-600">Avg. Improvement</div>
+                      <div className="font-heading text-2xl sm:text-3xl font-bold text-black">{service.stats.improvement}</div>
+                      <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-gray-600">Avg. Improvement</div>
                     </div>
                   </div>
 
-                  <h3 className="font-heading text-3xl font-bold text-black mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="font-heading text-2xl sm:text-3xl font-bold text-black mb-4 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
                   
-                  <p className="text-gray-700 mb-6 leading-relaxed font-sans text-lg">
+                  <p className="text-gray-700 mb-6 leading-relaxed font-sans text-base sm:text-lg">
                     {service.description}
                   </p>
 
