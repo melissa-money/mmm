@@ -49,6 +49,12 @@ export default function Resources() {
       link: 'https://referworkspace.app.goo.gl/jQXr',
       color: 'bg-green-400',
     },
+    {
+      name: 'Fireflies.AI',
+      description: 'Get 10% off Fireflies.AI - Automate your meeting notes. Transcribe, summarize, search, and analyze all your voice conversations.',
+      link: 'https://app.fireflies.ai/login?referralCode=01KC9Q4A969AMJYJWTS2Z5S63T',
+      color: 'bg-indigo-400',
+    },
 
   ];
 
