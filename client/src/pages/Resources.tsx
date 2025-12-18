@@ -55,6 +55,12 @@ export default function Resources() {
       link: 'https://app.fireflies.ai/login?referralCode=01KC9Q4A969AMJYJWTS2Z5S63T',
       color: 'bg-indigo-400',
     },
+    {
+      name: 'Genius Link',
+      description: 'Supercharge your Amazon earnings with the world’s smartest product links. Maximize your revenue with localization, deep linking, and seller networks.',
+      link: 'https://geni.us/Qifkd',
+      color: 'bg-cyan-400',
+    },
 
   ];
 
