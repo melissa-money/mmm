@@ -98,8 +98,20 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Client Resources */}
           <div>
+            <h3 className="text-lg font-heading font-bold mb-4 text-primary uppercase border-b-2 border-primary inline-block">Client Resources</h3>
+            <ul className="space-y-2 font-sans mb-8">
+              <li>
+                <Link href="/resources/squarespace-invite">
+                  <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
+                    → Invite Domain Manager
+                  </span>
+                </Link>
+              </li>
+            </ul>
+
+            {/* Quick Links */}
             <h3 className="text-lg font-heading font-bold mb-4 text-primary uppercase border-b-2 border-primary inline-block">Quick Links</h3>
             <ul className="space-y-2 font-sans">
               <li>
