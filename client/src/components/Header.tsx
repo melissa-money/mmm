@@ -16,6 +16,7 @@ export default function Header() {
     { name: 'Google Business Profile', href: '/services/google-business-profile' },
     { name: 'Cold Email Lead Gen', href: '/services/cold-email-lead-gen' },
     { name: 'Press Release Services', href: '/services/press-release-services' },
+    { name: 'GBP Suspension', href: '/services/gbp-suspension' },
     { name: 'Email Deliverability', href: '/services/email-deliverability' },
     { name: 'Business Funding', href: '/services/business-funding' },
     { name: 'Web Design', href: '/services/web-design' },

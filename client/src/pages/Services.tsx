@@ -1,4 +1,4 @@
-import { MapPin, ShoppingCart, Star, Palette, Mail, Users, FileText, ArrowRight, CheckCircle, DollarSign, Rocket, Newspaper } from 'lucide-react';
+import { MapPin, ShoppingCart, Star, Palette, Mail, Users, FileText, ArrowRight, CheckCircle, DollarSign, Rocket, Newspaper, Lock } from 'lucide-react';
 import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -41,6 +41,15 @@ export default function Services() {
       href: '/services/press-release-services',
       color: 'bg-yellow-400',
       stats: { improvement: '500+', customers: 'Outlets' },
+    },
+    {
+      icon: Lock,
+      title: 'GBP Suspension',
+      description: 'Get your suspended Google Business Profile reinstated. We handle the appeals and communication with Google.',
+      features: ['Suspension Analysis', 'Reinstatement Appeal', 'Policy Compliance', 'Google Communication'],
+      href: '/services/gbp-suspension',
+      color: 'bg-red-400',
+      stats: { improvement: '100%', customers: 'Reinstated' },
     },
     {
       icon: Mail,
