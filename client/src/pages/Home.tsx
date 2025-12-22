@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Millennial Money Marketing | #1 Phoenix Digital Marketing Agency";
+    document.title = "Millennial Money Marketing | #1 Phoenix Marketing Agency";
   }, []);
 
   return (
