@@ -25,6 +25,15 @@ export default function Services() {
       stats: { improvement: '127%', customers: '4.8★' },
     },
     {
+      icon: Lock,
+      title: 'GBP Suspension',
+      description: 'Get your suspended Google Business Profile reinstated. We handle the appeals and communication with Google.',
+      features: ['Suspension Analysis', 'Reinstatement Appeal', 'Policy Compliance', 'Google Communication'],
+      href: '/services/gbp-suspension',
+      color: 'bg-red-400',
+      stats: { improvement: '100%', customers: 'Reinstated' },
+    },
+    {
       icon: Rocket,
       title: 'Cold Email Lead Gen',
       description: 'Automated cold email infrastructure that fills your calendar with qualified sales calls on autopilot.',
@@ -41,15 +50,6 @@ export default function Services() {
       href: '/services/press-release-services',
       color: 'bg-yellow-400',
       stats: { improvement: '500+', customers: 'Outlets' },
-    },
-    {
-      icon: Lock,
-      title: 'GBP Suspension',
-      description: 'Get your suspended Google Business Profile reinstated. We handle the appeals and communication with Google.',
-      features: ['Suspension Analysis', 'Reinstatement Appeal', 'Policy Compliance', 'Google Communication'],
-      href: '/services/gbp-suspension',
-      color: 'bg-red-400',
-      stats: { improvement: '100%', customers: 'Reinstated' },
     },
     {
       icon: Mail,
