@@ -4,7 +4,13 @@ import { Check, Star, TrendingUp, Users, Award, Zap, Shield, MapPin } from "luci
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    document.title = "Millennial Money Marketing | #1 Phoenix Digital Marketing Agency";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
       <Header />
