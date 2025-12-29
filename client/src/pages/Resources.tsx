@@ -61,6 +61,12 @@ export default function Resources() {
       link: 'https://geni.us/Qifkd',
       color: 'bg-cyan-400',
     },
+    {
+      name: 'Senja',
+      description: 'Hands-down the best testimonial tool on the market. Collect, manage, and share social proof with ease.',
+      link: 'https://www.senja.io?via=mmm',
+      color: 'bg-purple-400',
+    },
 
   ];
 
