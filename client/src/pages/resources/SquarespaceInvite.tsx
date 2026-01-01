@@ -23,7 +23,7 @@ export default function SquarespaceInvite() {
     },
     {
       title: 'Enter Email Address',
-      description: 'Enter the email address: melissa@millennialmoneymarketing.com',
+      description: 'Enter the email address: admin@millennialmoneymarketing.com',
       icon: CheckCircle,
     },
   ];
@@ -71,7 +71,7 @@ export default function SquarespaceInvite() {
                       {index === 3 && (
                         <div className="mt-4 bg-gray-100 p-4 border-2 border-black inline-block">
                           <code className="font-mono text-primary font-bold text-lg break-all">
-                            melissa@millennialmoneymarketing.com
+                            admin@millennialmoneymarketing.com
                           </code>
                         </div>
                       )}
