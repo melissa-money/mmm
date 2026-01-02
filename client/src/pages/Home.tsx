@@ -102,7 +102,13 @@ export default function Home() {
         {/* Stats Section */}
         <section className="py-12 sm:py-16 bg-black text-white border-b-4 border-black">
           <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 text-center">
+              <div className="p-6 border-2 border-white bg-gray-900 shadow-[8px_8px_0px_0px_#fff] hover:-translate-y-2 transition-transform flex flex-col items-center justify-center">
+                <a href="https://experts.godaddy.com/melissa-gross" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+                  <img src="/images/godaddy-pro.png" alt="GoDaddy Pro Expert" className="h-12 w-auto object-contain mb-3 filter brightness-0 invert" />
+                  <div className="text-xl font-bold uppercase tracking-wider text-primary">Verified Expert</div>
+                </a>
+              </div>
               <div className="p-6 border-2 border-white bg-gray-900 shadow-[8px_8px_0px_0px_#FF69B4] hover:-translate-y-2 transition-transform">
                 <div className="font-heading text-6xl font-bold text-primary mb-2">150+</div>
                 <div className="text-xl font-bold uppercase tracking-wider">Businesses Helped</div>

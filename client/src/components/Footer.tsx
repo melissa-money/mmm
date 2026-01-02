@@ -62,6 +62,27 @@ const Footer = () => {
               </div>
             </div>
 
+            {/* Certifications */}
+            <div className="mt-6 mb-6">
+              <a 
+                href="https://experts.godaddy.com/melissa-gross" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block group"
+              >
+                <div className="bg-white p-3 border-2 border-white hover:border-primary transition-colors duration-200 shadow-[4px_4px_0px_0px_#fff] group-hover:shadow-[4px_4px_0px_0px_#C6F135] group-hover:translate-x-[-2px] group-hover:translate-y-[-2px]">
+                  <img 
+                    src="/images/godaddy-pro.png" 
+                    alt="GoDaddy Pro Expert" 
+                    className="h-8 w-auto object-contain" 
+                  />
+                  <div className="text-black text-xs font-bold mt-1 text-center font-heading uppercase tracking-wider">
+                    Verified Expert
+                  </div>
+                </div>
+              </a>
+            </div>
+
             {/* Business Hours */}
             <div className="mt-6 p-4 border-2 border-white bg-gray-900 shadow-[4px_4px_0px_0px_#fff]">
               <h4 className="font-heading font-bold text-primary mb-2 uppercase">Business Hours</h4>
