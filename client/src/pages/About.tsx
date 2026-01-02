@@ -97,6 +97,13 @@ export default function About() {
                 <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:left-12 bg-primary border-2 border-black px-3 py-1 sm:px-4 sm:py-2 font-heading font-bold text-sm sm:text-base shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-3 z-10">
                   💼 Fortune 250 Experience
                 </div>
+
+                <a href="https://experts.godaddy.com/melissa-gross" target="_blank" rel="noopener noreferrer" className="absolute -bottom-16 right-0 sm:-bottom-20 sm:right-0 z-10 group">
+                  <div className="bg-white p-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-2 group-hover:rotate-0 transition-all duration-200">
+                    <img src="/images/godaddy-pro.png" alt="GoDaddy Pro Expert" className="h-8 sm:h-10 w-auto object-contain" />
+                    <div className="text-[10px] sm:text-xs font-bold text-center font-heading uppercase mt-1">Verified Expert</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

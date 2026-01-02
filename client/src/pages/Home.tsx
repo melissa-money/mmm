@@ -125,6 +125,28 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Reviews Section */}
+        <section className="py-20 bg-white border-b-4 border-black">
+          <div className="container">
+            <div className="text-center mb-12">
+              <h2 className="font-heading text-3xl sm:text-5xl font-bold mb-4 sm:mb-6">What Our Clients Say</h2>
+              <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
+                Don't just take our word for it. See what our happy clients have to say about our services.
+              </p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white p-4">
+              <iframe 
+                className='lc_reviews_widget' 
+                src='https://link.millennialmoneymarketing.com/reputation/widgets/review_widget/nhEbwJlZ6WrgquZ6cQwb?widgetId=6958092b8116f2ac8c729380' 
+                frameBorder='0' 
+                scrolling='no' 
+                style={{minWidth: '100%', width: '100%', height: '600px'}}
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
         {/* Services Section */}
         <section className="py-20 bg-white border-b-4 border-black">
           <div className="container">
