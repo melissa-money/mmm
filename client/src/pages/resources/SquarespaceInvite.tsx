@@ -1,10 +1,22 @@
-import { ArrowRight, CheckCircle, Globe, Mail, UserPlus } from 'lucide-react';
+import { ArrowRight, CheckCircle, Globe, Mail, UserPlus, Copy, Check } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import { toast } from 'sonner';
 
 // Resource page for inviting a domain manager on Squarespace
 export default function SquarespaceInvite() {
+  const [copied, setCopied] = useState(false);
+  const email = 'admin@millennialmoneymarketing.com';
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    toast.success('Email copied to clipboard!');
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   const steps = [
     {
       title: 'Login and go to Domains',
@@ -23,8 +35,9 @@ export default function SquarespaceInvite() {
     },
     {
       title: 'Enter Email Address',
-      description: 'Enter the email address: admin@millennialmoneymarketing.com',
+      description: 'Enter the email address below:',
       icon: CheckCircle,
+      isEmailStep: true,
     },
   ];
 
@@ -68,11 +81,27 @@ export default function SquarespaceInvite() {
                       <p className="text-lg text-gray-700 font-sans leading-relaxed">
                         {step.description}
                       </p>
-                      {index === 3 && (
-                        <div className="mt-4 bg-gray-100 p-4 border-2 border-black inline-block">
-                          <code className="font-mono text-primary font-bold text-lg break-all">
-                            admin@millennialmoneymarketing.com
-                          </code>
+                      {step.isEmailStep && (
+                        <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                          <div className="bg-gray-100 p-4 border-2 border-black inline-block">
+                            <code className="font-mono text-primary font-bold text-lg break-all">
+                              {email}
+                            </code>
+                          </div>
+                          <Button 
+                            onClick={handleCopy}
+                            className="bg-black text-white hover:bg-primary hover:text-black border-2 border-black rounded-none font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all h-12 px-6"
+                          >
+                            {copied ? (
+                              <>
+                                <Check className="mr-2 h-4 w-4" /> Copied
+                              </>
+                            ) : (
+                              <>
+                                <Copy className="mr-2 h-4 w-4" /> Copy Email
+                              </>
+                            )}
+                          </Button>
                         </div>
                       )}
                     </div>

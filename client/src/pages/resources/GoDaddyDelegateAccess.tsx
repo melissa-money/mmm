@@ -1,10 +1,21 @@
-import { ArrowRight, CheckCircle, Globe, Mail, UserPlus, Settings } from 'lucide-react';
+import { ArrowRight, CheckCircle, Globe, Mail, UserPlus, Settings, Copy, Check } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import { toast } from 'sonner';
 
 // Resource page for adding delegate access on GoDaddy
 export default function GoDaddyDelegateAccess() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    toast.success('Email copied to clipboard!');
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   const steps = [
     {
       title: 'Login and Account Settings',
@@ -75,10 +86,26 @@ export default function GoDaddyDelegateAccess() {
                         {step.description}
                       </p>
                       {step.email && (
-                        <div className="mt-4 bg-gray-100 p-4 border-2 border-black inline-block">
-                          <code className="font-mono text-primary font-bold text-lg break-all">
-                            {step.email}
-                          </code>
+                        <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                          <div className="bg-gray-100 p-4 border-2 border-black inline-block">
+                            <code className="font-mono text-primary font-bold text-lg break-all">
+                              {step.email}
+                            </code>
+                          </div>
+                          <Button 
+                            onClick={() => handleCopy(step.email!)}
+                            className="bg-black text-white hover:bg-primary hover:text-black border-2 border-black rounded-none font-heading font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all h-12 px-6"
+                          >
+                            {copied ? (
+                              <>
+                                <Check className="mr-2 h-4 w-4" /> Copied
+                              </>
+                            ) : (
+                              <>
+                                <Copy className="mr-2 h-4 w-4" /> Copy Email
+                              </>
+                            )}
+                          </Button>
                         </div>
                       )}
                     </div>
