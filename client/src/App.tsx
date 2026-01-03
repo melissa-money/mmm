@@ -23,6 +23,7 @@ import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
 import SquarespaceInvite from "./pages/resources/SquarespaceInvite";
+import GoDaddyDelegateAccess from "./pages/resources/GoDaddyDelegateAccess";
 
 function Router() {
   return (
@@ -45,6 +46,7 @@ function Router() {
       <Route path="/partners" component={Partners} />
       <Route path="/resources" component={Resources} />
       <Route path="/resources/squarespace-invite" component={SquarespaceInvite} />
+      <Route path="/resources/godaddy-delegate-access" component={GoDaddyDelegateAccess} />
       <Route path="/contact" component={Contact} />
       {/* Service sub-routes redirect to main services page for now */}
       <Route path="/services/:slug" component={Services} />

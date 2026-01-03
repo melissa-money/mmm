@@ -126,7 +126,14 @@ const Footer = () => {
               <li>
                 <Link href="/resources/squarespace-invite">
                   <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
-                    → Invite Domain Manager
+                    → Invite Domain Manager (Squarespace)
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources/godaddy-delegate-access">
+                  <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
+                    → Add Delegate Access (GoDaddy)
                   </span>
                 </Link>
               </li>
