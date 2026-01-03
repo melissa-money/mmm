@@ -141,7 +141,7 @@ export default function Home() {
                 src='https://link.millennialmoneymarketing.com/reputation/widgets/review_widget/nhEbwJlZ6WrgquZ6cQwb?widgetId=6958092b8116f2ac8c729380' 
                 frameBorder='0' 
                 scrolling='no' 
-                style={{minWidth: '100%', width: '100%', height: '600px'}}
+                style={{minWidth: '100%', width: '100%', height: '1000px'}}
               ></iframe>
             </div>
           </div>
