@@ -24,6 +24,7 @@ import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
 import SquarespaceInvite from "./pages/resources/SquarespaceInvite";
 import GoDaddyDelegateAccess from "./pages/resources/GoDaddyDelegateAccess";
+import GBPManagerAccess from "./pages/resources/GBPManagerAccess";
 
 function Router() {
   return (
@@ -47,6 +48,7 @@ function Router() {
       <Route path="/resources" component={Resources} />
       <Route path="/resources/squarespace-invite" component={SquarespaceInvite} />
       <Route path="/resources/godaddy-delegate-access" component={GoDaddyDelegateAccess} />
+      <Route path="/resources/gbp-manager-access" component={GBPManagerAccess} />
       <Route path="/contact" component={Contact} />
       {/* Service sub-routes redirect to main services page for now */}
       <Route path="/services/:slug" component={Services} />

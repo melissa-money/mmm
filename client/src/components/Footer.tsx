@@ -137,6 +137,13 @@ const Footer = () => {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link href="/resources/gbp-manager-access">
+                  <span className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200 block cursor-pointer">
+                    → Add Manager (Google Business)
+                  </span>
+                </Link>
+              </li>
             </ul>
 
             {/* Quick Links */}
