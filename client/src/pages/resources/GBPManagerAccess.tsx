@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle, Globe, Mail, UserPlus, Settings, Copy, Check, MoreVertical, Users } from 'lucide-react';
+import { ArrowRight, CheckCircle, Globe, Mail, UserPlus, Settings, Copy, Check, MoreVertical, Users, LogIn } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -18,6 +18,11 @@ export default function GBPManagerAccess() {
   };
 
   const steps = [
+    {
+      title: 'Sign In to Correct Google Account',
+      description: 'Before proceeding, ensure you are signed in to the Google account that manages your Google Business Profile. This is usually the email address you used to claim or create your business listing.',
+      icon: LogIn,
+    },
     {
       title: 'Navigate to Google Business Profile',
       description: 'Go to business.google.com and select the profile you want to manage. If you only have one profile, it will bring you directly to your dashboard.',
